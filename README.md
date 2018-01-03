@@ -9,6 +9,34 @@ heavy equipment at auction based on it's usage, equipment type, and
 configuration.  The data is sourced from auction result postings and includes
 information on usage and equipment configurations.
 
+
+Version Control
+=====================
+Before you begin feature engineering and model building, you will need to establish
+a workflow for your team. For this you will git and github! Version control is your friend.
+The last thing you want at the end of the day is version proliferation with
+multiple, conflicting versions of your code floating around on Slack, email or elsewhere.
+Instead, you want one centralized repository of code that is version controlled
+and shared between every member of your team. Here is a recommended workflow:
+
+* Your team captain should fork the [case study repository](https://github.com/gSchool/dsi-regression-case-study). This will be your team's "upstream repo".
+* All other team members should fork the upstream repo.
+* Everyone clones their own forked repo to their own local machine.
+* On your local machine, create and checkout a branch to work on: `git checkout -b <feature_name>`. This will be your feature branch. No one works on the master branch, not even the upstream owner.
+* Do your work.
+* Everytime you complete an atomic piece of work: `git add -p` `git commit -m` `git push origin <your feature branch>`
+  * `git add -p` to interactively stage chunks of new/modified code. This is crucial to ensuring you commit only what you intend.
+  * `git commit -m <something useful>`. Your commit messages serve as documentation and communication for your team.
+  Example of a _good_ commit message: "add private method to feature engineering class to one-hot-encode categorical variables".
+  Examples of a _useless_ commit message: "stuff", "commit", "bug fix".
+  * `git push origin feature_1`, `git pull -r origin master`. Be explicit about which remote branch you want when you push/pull.
+* Once a useful chunk of work is complete, issue a pull request to merge your branch with the upstream repo.
+* The owner of the upstream repo can accept your pull request and merge it into the upstream master branch, then delete your feature branch.
+* Iterate frequently.
+* Avoid merge conflicts by working on separable areas of code and rebasing often `git pull -r origin master`.
+* In the end, everything will be merged to the master branch in the upstream repo.  This will be your “production” code that everyone will have a copy of in the end.
+* Consult the [github documentation](https://guides.github.com/introduction/flow/) if/when you get stuck.
+
 Evaluation
 ======================
 The evaluation of your model will be based on Root Mean Squared Log Error.
