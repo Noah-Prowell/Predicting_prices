@@ -1,4 +1,5 @@
 Train.csv
+test.csv
 *.pyc
 .idea
 .ipynb_checkpoints
