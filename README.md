@@ -5,7 +5,7 @@ In today's exercise you'll get a chance to try some of what you've learned
 about supervised learning on a real-world problem.
 
 The goal of the contest is to predict the sale price of a particular piece of
-heavy equipment at auction based on it's usage, equipment type, and
+heavy equipment at auction based on its usage, equipment type, and
 configuration.  The data is sourced from auction result postings and includes
 information on usage and equipment configurations.
 
