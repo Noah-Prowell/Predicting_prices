@@ -19,7 +19,7 @@ multiple, conflicting versions of your code floating around on Slack, email or e
 Instead, you want one centralized repository of code that is version controlled
 and shared between every member of your team. Here is a recommended workflow:
 
-* Your team captain should fork the [case study repository](https://github.com/gSchool/dsi-regression-case-study). This will be your team's "upstream repo".
+* Your team captain should fork the [case study repository](https://github.com/GalvanizeDataScience/dsi-regression-case-study). This will be your team's "upstream repo".
 * All other team members should fork the upstream repo.
 * Everyone clones their own forked repo to their own local machine.
 * On your local machine, create and checkout a branch to work on: `git checkout -b <feature_name>`. This will be your feature branch. No one works on the master branch, not even the upstream owner.
