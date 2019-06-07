@@ -100,7 +100,7 @@ model.
 Important Tips
 =========================
 
-1. This data is quite messy. Try to use your judgement about where your
+1. This data is messy. Try to use your judgement about where your
 cleaning efforts will yield the most results and focus there first.
 2. Because of the restriction to linear models, you will have to carefully
 consider how to transform continuous predictors in your model.
