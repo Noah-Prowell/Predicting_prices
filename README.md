@@ -8,7 +8,7 @@ Using data merged from several databases, you are asked to build a model that
 predicts HIV incidence for US counties.  You should also indentify and report
 the most significant drivers of HIV infection and how they vary between counties.
 
-Read more [here.](./forecast_HIV_infections/README.md)
+Read more [here.](https://github.com/GalvanizeDataScience/regression-case-study/tree/Denver/forecast_HIV_infections)
 <br/>
 <br/>
 ### Predict the sale price of heavy equipment at auction
