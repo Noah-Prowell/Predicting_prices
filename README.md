@@ -1,6 +1,7 @@
 # Linear models case study
 
-You and your group have two options for this case study.
+Depending on your campus (check with your instructors), you and your group have 
+two options for this case study.
 <br/>
 <br/>
 ### Forecast HIV incidence in US counties
@@ -21,13 +22,14 @@ Read more [here.](./predict_auction_price/README.md)
 <br/>
 ### Deliverables
 
-At the end of the day your group will be expected to present for 5
+At the end of the day your group will be expected to present for 5-10
 minutes on your findings.  Present results from your README.md.
 
 Cover the following in your presentation.
 
    1. Talk about what you planned to accomplish
-   2. How you organized yourselves as a team
+   2. How you organized yourselves as a team (including your git workflow)
    3. Description of the problem and the data
-   4. What you accomplished (choice of model, performance metric, validation)
+   4. What you accomplished (how you chose model, performance metric, validation)
+   5. Performance on unseen data
    5. Anything new you learned along the way
