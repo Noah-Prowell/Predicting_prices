@@ -6,7 +6,7 @@ two options for this case study.
 <br/>
 ### Forecast HIV incidence in US counties
 Using data merged from several databases, you are asked to build a model that
-predicts HIV incidence for US counties.  You should also indentify and report
+predicts HIV incidence for US counties.  You should also identify and report
 the most significant drivers of HIV infection and how they vary between counties.
 
 Read more [here.](https://github.com/GalvanizeDataScience/regression-case-study/tree/master/forecast_HIV_infections)
