@@ -72,7 +72,17 @@ submission working then iterate to improve.
 the *ratios* of predicted to actual values.  It's almost certainly too much of
 a task to implement an algorithm that minimizes this loss function directly in
 the time you have, but there are some steps you can take to do a good job of
-it.
+it.    
+
+
+## Overview of the score_model.py script
+Included is a score function to test your predictions of the test set against the provided hold out test set.  This follows a common setup in competition's (such a Kaggle where this came from) where there is a labeled train set to do you model and feature tuning and a provided hold out test set to compare your predictions against.  You will need to fit a model on the training data and get a prediction for all the data in the test set.  You will then need to create csv containing the field 'SalesID' and 'SalePrice' (must match exactly).  This will be the input parameter to running the function.    
+Example:
+In terminal:
+```
+python score_model.py <path to csv file>
+```
+
 
 ## Credit
 This case study is based on [Kaggle's Blue Book for Bulldozers](https://www.kaggle.com/c/bluebook-for-bulldozers) competition.  The best RMSLE was only 0.23 (obviously lower is better).  Note

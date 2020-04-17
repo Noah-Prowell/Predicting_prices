@@ -1,11 +1,20 @@
+import sys
 import numpy as np
+import pandas as pd
 
 def rmsle(actual, predictions):
     log_diff = np.log(predictions+1) - np.log(actual+1)
     return np.sqrt(np.mean(log_diff**2))
         
 if __name__=='__main__':
-    actual = np.array([10000, 10000, 50000, 50000, 100000, 100000])
-    predictions = np.array([5000, 15000, 45000, 55000, 95000, 105000])
-    error = rmsle(actual, predictions)
+    '''
+    Takes the location of the file of predictions that should have columns 'SaleID' and 'SalePrice' and gives a score.
+    '''
+    infile = sys.argv[1]
+    predictions = pd.read_csv(infile)
+    predictions.set_index('SalesID', inplace=True)
+    test_solution = pd.read_csv('data/end_of_day/test_actual.csv')
+    test_solution.set_index('SalesID', inplace=True)
+
+    error = rmsle(test_solution['SalePrice'], predictions['SalePrice'])
     print(error)
