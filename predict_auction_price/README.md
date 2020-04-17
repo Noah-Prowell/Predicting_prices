@@ -76,7 +76,7 @@ it.
 
 
 ## Overview of the score_model.py script
-Included is a score function to test your predictions of the test set against the provided hold out test set.  This follows a common setup in competitions (such as Kaggle, where this came from) where there is a labeled train set to do your modeling and feature tuning, in addition to a provided hold-out test set to compare your predictions against.  You will need to fit a model on the training data and get a prediction for all the data in the test set.  You will then need to create csv containing the field 'SalesID' and 'SalePrice' (must match exactly).  This will be the input parameter to running the function.    
+Included is a score function to test your predictions of the test set against the provided hold out test set.  This follows a common setup in competitions such as Kaggle, where this came from.  In these types of setups, there is a labeled train set to do your modeling and feature tuning.  There is also a provided hold-out test set to compare your predictions against.  You will need to fit a model on the training data and get a prediction for all the data in the test set.  You will then need to create csv containing the field 'SalesID' and 'SalePrice' (must match exactly).  This will be the input parameter to running the function.    
 Example:
 In terminal:
 ```
