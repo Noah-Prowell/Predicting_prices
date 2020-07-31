@@ -14,7 +14,7 @@ Read more [here.](https://github.com/GalvanizeDataScience/regression-case-study/
 <br/>
 ### Predict the sale price of heavy equipment at auction
 Predict the sale price of a particular piece of heavy equipment at auction based
-on it's usage, equipment type, and configuration.  The data is sourced from auction
+on its usage, equipment type, and configuration.  The data is sourced from auction
 result postings and includes information on usage and equipment configurations.
 
 Read more [here.](https://github.com/GalvanizeDataScience/regression-case-study/tree/master/predict_auction_price)
