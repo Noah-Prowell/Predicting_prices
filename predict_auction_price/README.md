@@ -21,14 +21,14 @@ value of 1000.  To convince yourself of this, recall that a difference of
 logarithms is equal to a single logarithm of a ratio, and rewrite each summand
 as a single logarithm of a ratio.
 
-This loss function is implemented in score_model.py.
+This loss function is implemented in `loss_model.py`.
 
 ## Data
 The data for this case study are in `./data`. Although there are both training
 and testing data sets, the testing data set should only be utilized to evaluate
 your final model performance at the end of the day.  Think about it as your
 hold out set.  Use cross-validation on the training data set to identify your
-best model and then score your best model on the test data at the end of the day.
+best model and report the performance of your best model on the test data at the end of the day.
 By using the same test data and the same evaluation metric (RMSLE) the relative
 performance of different group's models on this case study can be assessed.
 
@@ -45,7 +45,7 @@ are legal
   - Regularization: Ridge and LASSO.
 
 You may use other models or algorithms as supplements (for example, in feature
-engineering), but your final submissions must be scores from a linear type
+engineering), but your final submissions must be losses from a linear type
 model.
 
 ## Important Tips
@@ -75,12 +75,12 @@ the time you have, but there are some steps you can take to do a good job of
 it.    
 
 
-## Overview of the score_model.py script
-Included is a score function to test your predictions of the test set against the provided hold out test set.  This follows a common setup in competitions such as Kaggle, where this came from.  In these types of setups, there is a labeled train set to do your modeling and feature tuning.  There is also a provided hold-out test set to compare your predictions against.  You will need to fit a model on the training data and get a prediction for all the data in the test set.  You will then need to create csv containing the field 'SalesID' and 'SalePrice' (must match exactly).  This will be the input parameter to running the function.    
+## Overview of the `loss_model.py` script
+Included is a loss function to test your predictions of the test set against the provided hold out test set.  This follows a common setup in competitions such as Kaggle, where this came from.  In these types of setups, there is a labeled train set to do your modeling and feature tuning.  There is also a provided hold-out test set to compare your predictions against.  You will need to fit a model on the training data and get a prediction for all the data in the test set.  You will then need to create csv containing the field 'SalesID' and 'SalePrice' (must match exactly).  This will be the input parameter to running the function.
 Example:
 In terminal:
 ```
-python score_model.py <path to csv file>
+python loss_model.py <path to csv file>
 ```
 
 

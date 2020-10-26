@@ -8,7 +8,7 @@ def rmsle(actual, predictions):
         
 if __name__=='__main__':
     '''
-    Takes the location of the file of predictions that should have columns 'SaleID' and 'SalePrice' and gives a score.
+    Takes the location of the file of predictions that should have columns 'SaleID' and 'SalePrice' and gives a loss.
     '''
     infile = sys.argv[1]
     predictions = pd.read_csv(infile)
