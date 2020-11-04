@@ -14,7 +14,7 @@ Depending on your campus (check with your instructors), you and your group have
 two options for this case study.
 
 
-### Choice 1: [Forecast HIV incidence in US counties]((./forecast_HIV_infections/README.md))
+### Choice 1: [Forecast HIV incidence in US counties](forecast_HIV_infections/README.md)
 
 **Using data merged from several databases, you are asked to build a model that
 predicts HIV incidence for US counties.**  You should also identify and report
@@ -28,7 +28,7 @@ Read more [here](./forecast_HIV_infections/README.md).
 3. Data comes from various sources, which requires careful reading to understand the exact meaning of the data.
 4. Need to be aware of possible data leaking
 
-### Choice 2: [Predict the sale price of heavy equipment at auction]((./predict_auction_price/README.md))
+### Choice 2: [Predict the sale price of heavy equipment at auction](predict_auction_price/README.md)
 
 **Predict the sale price of a particular piece of heavy equipment at auction based
 on its usage, equipment type, and configuration.**  The data is sourced from auction
