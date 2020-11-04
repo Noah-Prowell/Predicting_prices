@@ -42,8 +42,14 @@ Please check the original Kaggle contest [page]((https://www.kaggle.com/c/bluebo
 The data for this case study are in `./data`. Although there are both training
 and testing data sets, the testing data set [test.csv](./data/test.csv) should **`only`** be utilized to evaluate
 your final model performance at the end of the day. Also, the ground truth of the test data is in [ground_truth/test_actual.csv](./data/ground_truth/test_actual.csv). Think about it as your
-hold out set.  Use cross-validation on the training data set [train.csv](./data/train.csv) to identify your
+hold out set.  Use cross-validation on the training data set [train_1.csv](./data/train_1.csv) and [train_2.csv](./data/train_2.csv) to identify your
 best model and report the performance of your best model on the test data at the end of the day.
+
+> Hint: use `cat` to concatenate `train_1.csv` and `train_2.csv` to a single `train.csv` file.
+  ```bash
+  cat train_1.csv train_2.csv > train.csv
+  ```
+
 By using the same test data and the same evaluation metric (RMSLE) the relative
 performance of different group's models on this case study can be assessed.
 
