@@ -1,7 +1,16 @@
 # Predict Heavy Equipment Auction Price
 
+- [Predict Heavy Equipment Auction Price](#predict-heavy-equipment-auction-price)
+  - [Case Study Goal](#case-study-goal)
+  - [Evaluation](#evaluation)
+  - [Data](#data)
+  - [Restrictions](#restrictions)
+  - [Important Tips](#important-tips)
+  - [Overview of the `loss_model.py` script](#overview-of-the-loss_modelpy-script)
+  - [Credit](#credit)
+
 ## Case Study Goal
-Predict the sale price of a particular piece of heavy equipment at auction based
+Predict the `sale price` of a particular piece of heavy equipment at auction, based
 on its usage, equipment type, and configuration.  The data is sourced from auction
 result postings and includes information on usage and equipment configurations.
 
@@ -25,14 +34,14 @@ This loss function is implemented in `loss_model.py`.
 
 ## Data
 The data for this case study are in `./data`. Although there are both training
-and testing data sets, the testing data set should only be utilized to evaluate
+and testing data sets, the testing data set should **`only`** be utilized to evaluate
 your final model performance at the end of the day.  Think about it as your
 hold out set.  Use cross-validation on the training data set to identify your
 best model and report the performance of your best model on the test data at the end of the day.
 By using the same test data and the same evaluation metric (RMSLE) the relative
 performance of different group's models on this case study can be assessed.
 
-A data dictionary is included that explains the columns in the data.
+A [`data_dictionary.csv`](./data/data_dictionary.csv) is included that explains the columns in the data.
 
 ## Restrictions
 Please use only *regression* methods for this case study.  The following techniques 
