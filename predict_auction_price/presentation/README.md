@@ -11,11 +11,13 @@ The auction dataset was over 100MB and contained 53 columns and over 401,000 row
 
 Because the dataset was large and messy, it was important to reduce the noise before we tested our models. We accomplished this by created a formatting function that dropped redundant or non-descriptive columns, eliminated null values, reformatted data types, and created dummy columns for our categorical data.
 
-[insert data pictures]
 <p align="center">
-    <img src="" width='700'/>
+    <img src="df_1.png" width='500'/>
 </p>
 
+<p align="center">
+    <img src="df_2.png" width='500'/>
+</p>
 
 ## Goals and Workflow
 
@@ -27,10 +29,10 @@ Next, we set up a live share working environment and began to analyze the data. 
 
 After our EDA and cleaning, we decided to split the remaining workload. 
 
-Noah - Lasso
-George - Ridge
-Jerome - Model support
-Raffi - README / git / model support
+Noah - Lasso\
+George - Ridge\
+Jerome - Model support\
+Raffi - README / git / model support\
 
 ## Model and Performance
 What you accomplished (how you chose model, performance metric, validation)
