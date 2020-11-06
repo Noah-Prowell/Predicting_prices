@@ -43,21 +43,23 @@ Raffi - EDA / Cleaning / README / Model support
 We split up responsibilities amongst the team to investigate RIDGE, LASSO, and elastic net. We then tuned our alpha hyperparameter by running those models over a list of possible alphas and used a function to find the alpha that had the smallest error. 
 
 <p align="center">
-    <img src="lasso_lambda.png" width='400'/>
+    <img src="lasso_lambda.png" width='600'/>
 </p>
 
 <p align="center">
-    <img src="ridge_lambda.png" width='400'/>
+    <img src="ridge_lambda.png" width='600'/>
 </p>
 
 Once we did that we were able to get a list of coefficients and filter out those features that had the least impact. We filtered out roughly 220 features through this process and found that we were able to remove them with minimal impact to the model error.
 
-RMSE error on the holdout data:
+<div align = 'center'>
+
+*RMSE error on the holdout data:*
+
+</div>
+
 <p align="center">
     <img src="ridge_screenshot.png" width='400'/>
 </p>
 
 Going forward, our goal is to minimize the error by further researching the features in the model to see how we could better improve.
-
-
-
