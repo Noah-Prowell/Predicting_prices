@@ -90,7 +90,7 @@ def formatting(df):
     
     '''
     df_usage = df[df.UsageBand.notnull()]
-    drop_list = drop_list = ['ProductGroupDesc', 'Enclosure_Type', 'Coupler_System', 'SalesID', 'auctioneerID', 'Engine_Horsepower', 'MachineID', 'ModelID',
+    drop_list = ['ProductGroupDesc', 'Enclosure_Type', 'Coupler_System', 'SalesID', 'auctioneerID', 'Engine_Horsepower', 'MachineID', 'ModelID',
                 'fiModelDesc', 'fiBaseModel','fiSecondaryDesc','fiModelSeries','fiModelDescriptor', 'fiProductClassDesc',
 'Thumb_None or Unspecified',
  'Blade_Type_PAT',
