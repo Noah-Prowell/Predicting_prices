@@ -52,14 +52,14 @@ We split up responsibilities amongst the team to investigate RIDGE, LASSO, and e
 
 Once we did that we were able to get a list of coefficients and filter out those features that had the least impact. We filtered out roughly 220 features through this process and found that we were able to remove them with minimal impact to the model error.
 
+
 <div align = 'center'>
 
 *RMSE error on the holdout data:*
 
 </div>
-
 <p align="center">
-    <img src="ridge_screenshot.png" width='400'/>
+    <img src="ridge_test.png" width='400'/>
 </p>
 
 <div align = 'center'>
@@ -67,9 +67,11 @@ Once we did that we were able to get a list of coefficients and filter out those
 *RMSE error on the test data:*
 
 </div>
+
 <p align="center">
-    <img src="ridge_test.png" width='400'/>
+    <img src="ridge_screenshot.png" width='400'/>
 </p>
+
 
 <div align = 'center'>
 
