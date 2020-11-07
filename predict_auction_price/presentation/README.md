@@ -62,4 +62,23 @@ Once we did that we were able to get a list of coefficients and filter out those
     <img src="ridge_screenshot.png" width='400'/>
 </p>
 
+<div align = 'center'>
+
+*RMSE error on the test data:*
+
+</div>
+<p align="center">
+    <img src="ridge_test.png" width='400'/>
+</p>
+
+<div align = 'center'>
+
+*LASSO error on the test data:*
+
+</div>
+<p align="center">
+    <img src="lasso_mean.png" width='400'/>
+</p>
+
+
 Going forward, our goal is to minimize the error by further researching the features in the model to see how we could better improve.
