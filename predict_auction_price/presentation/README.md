@@ -17,12 +17,6 @@ The auction dataset was over 100MB and contained 53 columns and over 401,000 row
 
 Because the dataset was large and messy, it was important to reduce the noise before we tested our models. We accomplished this by created a formatting function that dropped redundant or non-descriptive columns, eliminated null values, reformatted data types, and created dummy columns for our categorical data.
 
-### Get Dummies
-
-With all the NaNs throughout the data, we found a useful way to deal with them was to create dummy columns:
-
-Instead of `drop_first=True`, we left it as `drop_first=False` so we weren’t adding NaN columns, but they’re still being inferred by the values of columns added by `get_dummies`.
-
 ## Goals and Workflow
 
 Our goal is to provide a reliable and flexible model that accurately predicts the sale price of a particular piece of heavy equipment.
@@ -30,6 +24,13 @@ Our goal is to provide a reliable and flexible model that accurately predicts th
 Before we started working with the data we established a shared repository and mapped our directories, which included the data, our source code files, and presentation materials. This was an important first step that greatly increased our organization and collaboration.
 
 Next, we set up a live share working environment and began to analyze the data. We performed EDA as a group, which was a useful strategy because it enabled us to establish a better understanding of the data more quickly. We continued to work as a group during the next phase of our project, which was data cleaning. It was also useful to perform this phase as a group because it enabled us to quickly address problems in our source code.
+
+### Get Dummies
+
+With all the NaNs throughout the data, we found a useful way to deal with them was to create dummy columns:
+
+Instead of `drop_first=True`, we left it as `drop_first=False` so we weren’t adding NaN columns, but they’re still being inferred by the values of columns added by `get_dummies`.
+
 
 After our EDA and cleaning, we decided to split the remaining workload. 
 
